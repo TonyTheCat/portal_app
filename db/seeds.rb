@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+100.times do |i|
+  Item.create(title: "Title #{i}", descr: "Description #{rand(36).to_s + rand(36).to_s}")
+end

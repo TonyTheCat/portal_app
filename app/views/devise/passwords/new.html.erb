@@ -1,7 +1,10 @@
-
-
-
-
+<head>
+  <style type="text/css">
+    body {
+      background-image: url('/assets/background.jpg');
+    }
+  </style>
+</head>
 
 <div class="panel panel-info modal-dialog center-block cm-modal">
   <div class="panel-heading">
@@ -26,16 +29,12 @@
 
     <%= render "devise/shared/links" %>
 
-
     <div class="cm-notify">
-      <% if notice %>
-          <p class="alert alert-success"><%= notice %></p>
-      <% end %>
-
-      <% if alert %>
-          <p class="alert alert-danger"><%= alert %></p>
-      <% end %>
+      <div class="alert alert-danger">
+        <%= devise_error_messages! %>
+      </div>
     </div>
+
 
   </div>
 </div>
