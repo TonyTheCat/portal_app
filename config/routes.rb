@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
-  root to: 'sessions#new'
   devise_for :users
+
+  devise_scope :user do
+    root to: "devise/sessions#new"
+  end
+
+  resource :items
 end

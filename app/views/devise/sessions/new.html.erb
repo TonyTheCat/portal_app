@@ -1,0 +1,42 @@
+<div class="panel panel-info modal-dialog center-block cm-modal">
+  <div class="panel-heading">
+    <h2 class="panel-title text-center cm-panel-title">Welcome to PORTAL APP</h2>
+  </div>
+  <div class="panel-body text-center center-block">
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="form-group">
+      <h3 class="cm-h2">Please, log in</h3>
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+
+      <%= f.label :password %><br />
+      <%= f.password_field :password, autocomplete: "off", class: 'form-control'  %>
+
+      <% if devise_mapping.rememberable? -%>
+            <div class="checkbox">
+              <%= f.check_box :remember_me%>
+              <%= f.label :remember_me %>
+            </div>
+      <% end %>
+
+        <%= f.submit "Log in", class: 'btn btn-primary cm-btn' %>
+      <% end %>
+
+      <div class="">
+        <%= render "devise/shared/links" %>
+      </div>
+
+      <div class="cm-notify">
+        <% if notice %>
+            <p class="alert alert-success"><%= notice %></p>
+        <% end %>
+
+        <% if alert %>
+            <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+
+@import "bootstrap-sprockets"
+@import "bootstrap"
+
+body
+  color: #31708f
+  background-image: url('/assets/background.jpg')
+
+input:hover
+  border-color: #66afe9
+  outline: 0
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6)
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6)
+
+label
+  padding-left: 3px !important
+
+.test
+  background-color: red
+
+.cm-btn
+  width: 100px
+  border-radius: 0
+  margin: 10px
+
+.cm-autowidth
+  width: auto
+
+.cm-modal
+  opacity: 0.8
+  width: 400px
+  height: 485px
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-left: -200px
+  margin-top: -250px
+  box-shadow: rgb(12, 87, 121) 0 0 8px 3px
+
+.cm-panel-title
+  font-weight: bold
+  padding: 10px
+
+.cm-notify
+  font-size: 14px !important
+
+.cm-notify h2
+  font-size: 14px !important
+  margin: 5px
+
+.field
+  margin: 5px
+
+.cm-h2
+  margin-top: 5px
