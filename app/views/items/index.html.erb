@@ -29,5 +29,8 @@
   </tbody>
 </table>
 
+<nav aria-label="Page navigation">
+  <%= will_paginate(@items, :renderer => WillPaginate::ActionView::LinkRenderer) %>
+</nav>
+
 <br>
-<%= link_to 'New Item', new_item_path %>
