@@ -55,5 +55,14 @@
     <%= yield %>
   </div>
 
+  <!--Hide notification with animation-->
+  <script type="text/javascript">
+      $(document).ready(function(){
+          setTimeout(function(){
+              $('.cm-notify').fadeOut('slow');
+          }, 3000);
+      })
+  </script>
+
   </body>
 </html>

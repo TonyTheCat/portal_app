@@ -42,11 +42,14 @@
 
     <%= render "devise/shared/links" %>
 
+    <% if devise_error_messages! %>
+       <% puts "ERROR MESSAGE!" %>
       <div class="cm-notify">
         <div class="alert alert-danger">
           <%= devise_error_messages! %>
         </div>
       </div>
+    <% end %>
 
     </div>
   </div>
